@@ -1,13 +1,15 @@
 package com.zwq.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
-import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import org.springframework.stereotype.Component;
 
 //@Scope("prototype")
 //@Lazy
+//@XmlRootElement
 @Component
 public class UserModel implements Serializable{
 	/**
@@ -17,6 +19,7 @@ public class UserModel implements Serializable{
 	private int id;
 	private String name;
 	private int age;
+	private List<OrderModel> orders;
 	
 	public UserModel() {
 		System.out.println("UserModel实例化");
@@ -41,6 +44,14 @@ public class UserModel implements Serializable{
 		this.age = age;
 	}
 	
+	public List<OrderModel> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<OrderModel> orders) {
+		this.orders = orders;
+	}
+
 	@Override
 	public int hashCode() {
 		int result = 17;  

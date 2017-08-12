@@ -43,7 +43,7 @@ public class TestController {
 	
 	@RequestMapping("/getUser")
 	public @ResponseBody UserModel getUser() {
-		return userService.getUser(1);
+		return userService.getUser(85);
 	}
 	
 	@RequestMapping("/saveUser")
@@ -53,7 +53,7 @@ public class TestController {
 		user.setAge(38);
 		userService.saveUser(user);
 		//获取自增主键
-		System.out.println(user.getId());
+		System.out.println("userId : " + user.getId());
 		return user;
 	}
 	

@@ -17,6 +17,7 @@ public class UserService implements IUserService {
 	
 	@Override
 	public UserModel getUser(int id) {
+		System.out.println(userDao.getUser(id));
 		return userDao.getUser(id);
 	}
 
