@@ -75,6 +75,11 @@
 			<artifactId>javatuples</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+        </dependency>
 	</dependencies>
 
 
