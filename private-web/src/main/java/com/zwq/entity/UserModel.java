@@ -3,8 +3,7 @@ package com.zwq.entity;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.stereotype.Component;
 
 //@Scope("prototype")
@@ -17,6 +16,7 @@ public class UserModel implements Serializable{
 	 */
 	private static final long serialVersionUID = 2876321151204996267L;
 	private int id;
+	@NotBlank(message = "name不能为空")
 	private String name;
 	private int age;
 	private List<OrderModel> orders;
@@ -52,14 +52,14 @@ public class UserModel implements Serializable{
 		this.orders = orders;
 	}
 
-	@Override
+	/*@Override
 	public int hashCode() {
 		int result = 17;  
 		result = result *31 + id;
         result = result * 31 + name.hashCode();  
         result = result * 31 + age;  
         return result; 
-	}
+	}*/
 	
 	@Override
 	public boolean equals(Object obj) {
