@@ -23,8 +23,9 @@ public class InvocationHandlerImpl implements InvocationHandler {
         System.out.println("method : " + method.getName());
         System.out.println("args ： " + args);
         System.out.println("开始记录日志");
-//        Object obj = method.invoke(target, args);
+        Object obj = method.invoke(target, args);
         System.out.println("结束记录日志");
+        
         /*    
          * System.out.println("obj : " + obj.getClass().getName());
          * 本例中saveXXX方法没有返回值所以obj会报空指针异常

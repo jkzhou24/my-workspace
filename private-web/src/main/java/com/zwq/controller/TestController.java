@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.beans.propertyeditors.CustomNumberEditor;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.WebDataBinder;
@@ -22,6 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.zwq.api.IUserService;
 import com.zwq.entity.UserModel;
@@ -85,16 +85,16 @@ public class TestController {
 	}
 
 	@ModelAttribute
-	public void setModelAttribute(Model model) {
-		System.out.println("Test Pre-Run");
-		model.addAttribute("attr", "abc");
+	public void setModelAttribute(ModelAndView model) {
+		System.out.println("@ModelAttribute Pre-Run");
+		model.addObject("name", "nono");
 	}
 
 	@RequestMapping("/testModelAttribute")
-	public @ResponseBody String testModelAttribute(String attr) {
-		System.out.println(attr);
-		return "test";
+	public @ResponseBody String testModelAttribute(ModelAndView model) {
+		return (String)model.getModel().get("name");
 	}
+	
 
 	@RequestMapping("/testValidator")
 	public @ResponseBody String testValidator(@Valid UserModel user, Errors errors) {
