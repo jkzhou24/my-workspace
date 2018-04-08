@@ -1,4 +1,4 @@
-package com.zwq.demo.redis;
+/*package com.zwq.demo.redis;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -636,3 +636,4 @@ public class Chapter05 {
         }
     }
 }
+*/
