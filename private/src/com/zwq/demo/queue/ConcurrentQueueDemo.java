@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  *  并发队列ConcurrentLinkedQueue的使用
  */
 
-public class ConcurrentQueue {
+public class ConcurrentQueueDemo {
 
     public static void main(String[] args){
         ToyotaYQ yq = new ToyotaYQ();
@@ -58,6 +58,12 @@ class ToyotaYQ implements Runnable{
                 if(thisVIN == null){
                     break;
                 }
+                try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
                 System.out.println(Thread.currentThread().getName() + "成功制单：" + thisVIN + "。剩余：" + queueYQ.size() + "个任务");
             }
         }
