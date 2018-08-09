@@ -21,6 +21,12 @@
 RemoteSystemsTempFiles/
 Servers/
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
 # Maven Files #
 target/
 pom.xml.tag
