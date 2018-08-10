@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Class-Path: jcl-over-slf4j-1.7.13.jar tomcat-embed-el-8.0.28.jar sprin
+ g-boot-starter-tomcat-1.3.0.RELEASE.jar spring-beans-4.2.3.RELEASE.ja
+ r spring-web-4.2.3.RELEASE.jar spring-core-4.2.3.RELEASE.jar spring-b
+ oot-autoconfigure-1.3.0.RELEASE.jar validation-api-1.1.0.Final.jar lo
+ gback-classic-1.1.3.jar spring-boot-starter-1.3.0.RELEASE.jar spring-
+ boot-starter-web-1.3.0.RELEASE.jar aopalliance-1.0.jar spring-context
+ -4.2.3.RELEASE.jar tomcat-embed-logging-juli-8.0.28.jar spring-boot-1
+ .3.0.RELEASE.jar hibernate-validator-5.2.2.Final.jar tomcat-embed-web
+ socket-8.0.28.jar spring-webmvc-4.2.3.RELEASE.jar snakeyaml-1.16.jar 
+ logback-core-1.1.3.jar spring-boot-configuration-processor-2.0.4.RELE
+ ASE.jar log4j-over-slf4j-1.7.13.jar classmate-1.1.0.jar jackson-annot
+ ations-2.6.3.jar spring-expression-4.2.3.RELEASE.jar tomcat-embed-cor
+ e-8.0.28.jar jackson-core-2.6.3.jar jboss-logging-3.3.0.Final.jar spr
+ ing-boot-starter-logging-1.3.0.RELEASE.jar spring-boot-starter-valida
+ tion-1.3.0.RELEASE.jar jackson-databind-2.6.3.jar slf4j-api-1.7.13.ja
+ r spring-aop-4.2.3.RELEASE.jar jul-to-slf4j-1.7.13.jar
+Main-Class: com.zwq.springBootDemo.App
+
