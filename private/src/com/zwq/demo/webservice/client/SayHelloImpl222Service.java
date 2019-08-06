@@ -1,14 +1,10 @@
 
 package com.zwq.demo.webservice.client;
 
+import javax.xml.namespace.QName;
+import javax.xml.ws.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-import javax.xml.namespace.QName;
-import javax.xml.ws.Service;
-import javax.xml.ws.WebEndpoint;
-import javax.xml.ws.WebServiceClient;
-import javax.xml.ws.WebServiceException;
-import javax.xml.ws.WebServiceFeature;
 
 
 /**
@@ -17,8 +13,8 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "SayHelloImplService", targetNamespace = "http://server.webservice.demo.zwq.com/", wsdlLocation = "http://localhost:8082/webservice/sayHello?wsdl")
-public class SayHelloImplService
+@WebServiceClient(name = "SayHelloImpl222Service", targetNamespace = "http://server.webservice.demo.zwq.com/", wsdlLocation = "http://localhost:8082/webservice/sayHello?wsdl")
+public class SayHelloImpl222Service
     extends Service
 {
 
@@ -38,27 +34,27 @@ public class SayHelloImplService
         SAYHELLOIMPLSERVICE_EXCEPTION = e;
     }
 
-    public SayHelloImplService() {
+    public SayHelloImpl222Service() {
         super(__getWsdlLocation(), SAYHELLOIMPLSERVICE_QNAME);
     }
 
-    public SayHelloImplService(WebServiceFeature... features) {
+    public SayHelloImpl222Service(WebServiceFeature... features) {
         super(__getWsdlLocation(), SAYHELLOIMPLSERVICE_QNAME, features);
     }
 
-    public SayHelloImplService(URL wsdlLocation) {
+    public SayHelloImpl222Service(URL wsdlLocation) {
         super(wsdlLocation, SAYHELLOIMPLSERVICE_QNAME);
     }
 
-    public SayHelloImplService(URL wsdlLocation, WebServiceFeature... features) {
+    public SayHelloImpl222Service(URL wsdlLocation, WebServiceFeature... features) {
         super(wsdlLocation, SAYHELLOIMPLSERVICE_QNAME, features);
     }
 
-    public SayHelloImplService(URL wsdlLocation, QName serviceName) {
+    public SayHelloImpl222Service(URL wsdlLocation, QName serviceName) {
         super(wsdlLocation, serviceName);
     }
 
-    public SayHelloImplService(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
+    public SayHelloImpl222Service(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
         super(wsdlLocation, serviceName, features);
     }
 

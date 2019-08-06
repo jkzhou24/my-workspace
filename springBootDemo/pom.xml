@@ -24,6 +24,34 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<version>2.0.4.RELEASE</version>
 		</dependency>
+
+
+
+		<!-- 引入elastic-job-lite核心模块 -->
+		<dependency>
+			<groupId>com.dangdang</groupId>
+			<artifactId>elastic-job-lite-core</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+		<!-- 使用springframework自定义命名空间时引入 -->
+		<dependency>
+			<groupId>com.dangdang</groupId>
+			<artifactId>elastic-job-lite-spring</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<!-- Package as an executable JAR -->
@@ -32,6 +60,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.zwq.springBootDemo.task.ApiJobSimple</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

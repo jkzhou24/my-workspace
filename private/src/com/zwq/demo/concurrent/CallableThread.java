@@ -7,12 +7,14 @@ import java.util.concurrent.Future;
 
 public class CallableThread implements Callable<String>
 {
+    @Override
     public String call() throws Exception
     {
         System.out.println("进入CallableThread的call()方法, 开始睡觉, 睡觉时间为" + System.currentTimeMillis());
         Thread.sleep(3000);
         return "123";
     }
+
     public static void main(String[] args) throws Exception
     {
         ExecutorService es = Executors.newCachedThreadPool();
